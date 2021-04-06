@@ -1,0 +1,37 @@
+.skills-container {
+  height: 600px;
+  width: 100%;
+  background-color: #23252f;
+}
+
+.skills-header {
+  font-family: "Nunito Sans";
+  font-size: 40px;
+  line-height: 41px;
+  font-style: normal;
+  font-weight: 500;
+  color: #98a6ad;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.first-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons {
+  height: 10px;
+  width: 10px;
+}

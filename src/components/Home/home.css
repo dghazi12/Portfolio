@@ -1,0 +1,94 @@
+.home-container {
+  height: 840px;
+  width: 100%;
+  background-color: #272935;
+}
+
+.bio-container {
+  position: absolute;
+  margin: 100px 0px 0px 35%;
+}
+
+.home-header {
+  font-family: "Nunito Sans";
+  font-size: 40px;
+  line-height: 41px;
+  font-style: normal;
+  font-weight: 500;
+  color: #98a6ad;
+}
+
+.about-text {
+  font-family: "Nunito Sans";
+  font-size: 20px;
+  line-height: 31px;
+  font-style: normal;
+  font-weight: 300;
+  color: #ffffff;
+  width: 80%;
+}
+
+.profile-picture {
+  position: absolute;
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+}
+
+.contact-info {
+  margin-left: 10%;
+  margin-top: 100px;
+}
+
+.name {
+  position: absolute;
+  margin: 300px 0px 0px 0px;
+  font-family: "Nunito Sans";
+  font-size: 40px;
+  line-height: 31px;
+  font-style: normal;
+  font-weight: 600;
+  color: #ffffff;
+  width: 80%;
+}
+
+.home-font-awesome {
+  position: absolute;
+  display: inline-grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 20px;
+  margin: 360px 0px 0px 35px;
+}
+
+.extra-content {
+  position: absolute;
+  margin: 600px 0px 0px 35%;
+}
+
+.extra-header {
+  font-family: "Nunito Sans";
+  font-size: 40px;
+  /* line-height: 31px; */
+  font-style: normal;
+  font-weight: 600;
+  color: #ffffff;
+  /* width: 80%; */
+}
+
+.extra-subheader {
+  font-family: "Nunito Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.extra-info {
+  font-family: "Nunito Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 10px;
+  /* width: 80%; */
+}
