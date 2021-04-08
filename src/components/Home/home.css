@@ -61,8 +61,8 @@
 }
 
 .extra-content {
-  position: absolute;
-  margin: 600px 0px 0px 35%;
+  /* position: absolute; */
+  margin: 450px 0px 0px 35%;
 }
 
 .extra-header {

@@ -1,0 +1,24 @@
+.projects-container {
+  /* height: 840px; */
+  height: 100%;
+  width: 100%;
+  background-color: #272935;
+}
+
+.projects-header {
+  font-family: "Nunito Sans";
+  font-size: 40px;
+  line-height: 41px;
+  font-style: normal;
+  font-weight: 500;
+  color: #98a6ad;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.first-projects {
+  display: flex;
+  flex-direction: row;
+}

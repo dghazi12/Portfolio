@@ -1,0 +1,121 @@
+.contact-container {
+  height: 840px;
+  width: 100%;
+  background-color: #23252f;
+}
+
+.contact-body {
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #004e92,
+    #000428
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #004e92,
+    #000428
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  height: 97%;
+  justify-content: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.contact-grid {
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: 87%;
+  /* background: white; */
+  background: #44475a;
+  color: black;
+  border-radius: 20px;
+}
+
+.contact-grid h2 {
+  font-family: "Russo One", sans-serif;
+}
+
+.phone {
+  font-family: "Oxygen", sans-serif;
+  font-weight: "bold";
+  font-size: 20px;
+  margin-left: -85px;
+  margin-top: -20px;
+}
+
+.email {
+  font-family: "Oxygen", sans-serif;
+  font-weight: "bold";
+  margin: 10px auto 20px auto;
+  font-size: 20px;
+}
+
+.contact-grid hr {
+  border-top: 5px dotted black;
+  width: 40%;
+  margin: auto auto 10px auto;
+}
+
+.contact-list i {
+  font-size: 40px;
+  padding-right: 1rem;
+  margin: auto;
+}
+
+/* Contact Form */
+
+.name {
+  width: 50%;
+  border-radius: 1em;
+  height: 20px;
+  margin-bottom: 10px;
+  border-color: silver;
+  font-family: "Oxygen", sans-serif;
+}
+
+.message {
+  width: 50%;
+  border-radius: 0.5em;
+  height: 150px;
+  border-color: silver;
+  margin-bottom: 10px;
+  font-family: "Oxygen", sans-serif;
+}
+
+@media (max-width: 1200px) {
+  .contact-grid hr {
+    border-top: 5px dotted black;
+    width: 40%;
+    margin: auto auto 10px auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact-grid hr {
+    border-top: 5px dotted black;
+    width: 40%;
+    margin: auto auto 10px auto;
+  }
+  .name {
+    width: 70%;
+  }
+  .message {
+    width: 70%;
+  }
+}
+
+@media (max-width: 350px) {
+  .phone {
+    font-size: 16px;
+    margin-left: -65px;
+  }
+
+  .email {
+    font-size: 16px;
+  }
+}

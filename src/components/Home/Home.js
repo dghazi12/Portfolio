@@ -5,7 +5,6 @@ import {
   faLinkedinIn,
   faGithubSquare,
 } from "@fortawesome/free-brands-svg-icons";
-
 import { faFile } from "@fortawesome/free-solid-svg-icons";
 
 import Picture from "../../images/ProfilePicture/profile-picture.jpeg";
