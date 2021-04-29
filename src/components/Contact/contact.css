@@ -14,11 +14,12 @@
   font-size: 40px;
   line-height: 41px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   color: #98a6ad;
   display: flex;
   justify-content: center;
   padding-top: 100px;
+  padding-bottom: 20px;
 }
 
 .phone-icon {
@@ -37,44 +38,104 @@
 
 .name-form {
   background-color: #44475a;
-  width: 770px;
+  width: 60vw;
   height: 42.5px;
   border-radius: 8px;
   font-size: 20px;
   color: #ffffff;
+  margin-top: 20px;
   margin-bottom: 10px;
+  font-family: "Nunito Sans";
 }
 
 .email-form {
   background-color: #44475a;
-  width: 770px;
+  width: 60vw;
   height: 42.5px;
   border-radius: 8px;
   font-size: 20px;
   color: #ffffff;
   margin-bottom: 10px;
+  font-family: "Nunito Sans";
 }
 
 .subject-form {
   background-color: #44475a;
-  width: 770px;
+  width: 60vw;
   height: 42.5px;
   border-radius: 8px;
   font-size: 20px;
   color: #ffffff;
   margin-bottom: 10px;
+  font-family: "Nunito Sans";
 }
 
 .message-form {
   background-color: #44475a;
-  width: 770px;
+  width: 60vw;
   height: 150.5px;
   border-radius: 8px;
   font-size: 20px;
   color: #ffffff;
   margin-bottom: 10px;
+  font-family: "Nunito Sans";
 }
 
 .send-button:hover {
   color: #795548;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-header {
+    font-size: 28px;
+    line-height: 25px;
+  }
+  .phone-icon {
+    font-size: 16px;
+  }
+
+  .email-icon {
+    font-size: 16px;
+  }
+
+  .name-form {
+    width: 70vw;
+  }
+
+  .email-form {
+    width: 70vw;
+  }
+
+  .subject-form {
+    width: 70vw;
+  }
+
+  .message-form {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-header {
+    font-size: 24px;
+    line-height: 14px;
+  }
+
+  .phone-icon {
+    font-size: 14px;
+  }
+
+  .email-icon {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .phone-icon {
+    font-size: 12px;
+  }
+
+  .email-icon {
+    font-size: 12px;
+  }
 }
