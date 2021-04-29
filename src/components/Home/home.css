@@ -47,8 +47,13 @@
   line-height: 31px;
   font-style: normal;
   font-weight: 400;
-  color: #795548;
+  color: #ffffff;
+  text-decoration: underline;
   width: 80%;
+}
+
+.contact-button:hover {
+  color: #795548;
 }
 
 .name {
@@ -132,7 +137,6 @@
     line-height: 28px;
   }
   .bio-container {
-    width: 95%;
     margin: 550px 0px 0px 15%;
   }
   .profile-picture {

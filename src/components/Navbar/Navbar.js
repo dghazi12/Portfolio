@@ -16,8 +16,13 @@ import MobileNavbar from "./MobileNavbar";
 const useStyles = makeStyles((theme) => ({
   mobileNavbar: {
     display: "none",
-    [theme.breakpoints.down("1080")]: {
+    [theme.breakpoints.down("1024")]: {
       display: "block",
+    },
+  },
+  hide: {
+    [theme.breakpoints.down("1024")]: {
+      display: "none",
     },
   },
   root: {
@@ -49,8 +54,8 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: "32px !important",
     paddingBottom: "16px",
     paddingTop: "16px",
-    [theme.breakpoints.down("940")]: {
-      // fontSize: "20px",
+    [theme.breakpoints.down("1001")]: {
+      display: "none",
     },
   },
 }));
@@ -90,7 +95,7 @@ export default function Navbar(props) {
       {/* <MobileNavbar className={classes.mobileNavbar} /> */}
       <React.Fragment>
         <CssBaseline />
-        <AppBar style={{ backgroundColor: "#f8f8f2" }}>
+        <AppBar style={{ backgroundColor: "#f8f8f2", width: "100%" }}>
           <Toolbar>
             <Typography variant="h6" className={classes.name}>
               David A Ghazi
@@ -108,12 +113,12 @@ export default function Navbar(props) {
               </Button>
               <Button>
                 <Link
-                  to="about-container"
+                  to="skills-container"
                   className={classes.button}
                   spy={true}
                   smooth={true}
                 >
-                  About Me
+                  Skills
                 </Link>
               </Button>
               <Button>

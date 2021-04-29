@@ -11,8 +11,17 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   hideMobile: {
     display: "none",
-    [theme.breakpoints.down("1000")]: {
+    [theme.breakpoints.down("1024")]: {
       display: "block",
+    },
+    name: {
+      color: "black",
+      fontFamily: "Nunito Sans",
+      fontSize: "24px",
+      fontWeight: "bold",
+      [theme.breakpoints.down("1117")]: {
+        fontSize: "20px",
+      },
     },
   },
 }));
@@ -59,6 +68,7 @@ export default function MenuListComposition() {
           aria-controls={open ? "menu-list-grow" : undefined}
           aria-haspopup="true"
           onClick={handleToggle}
+          className={classes.name}
         >
           David A Ghazi
         </Button>
