@@ -1,5 +1,4 @@
 .projects-container {
-  /* height: 840px; */
   height: 100%;
   width: 100%;
   background-color: #272935;
@@ -11,10 +10,9 @@
   font-size: 40px;
   line-height: 41px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   color: #98a6ad;
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   padding-top: 100px;
 }
@@ -22,4 +20,18 @@
 .first-projects {
   display: flex;
   flex-direction: row;
+}
+
+@media screen and (max-width: 1000px) {
+  .projects-header {
+    font-size: 28px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .projects-header {
+    font-size: 24px;
+    line-height: 14px;
+  }
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-
 import {
   faHtml5,
   faCss3,
@@ -9,11 +8,10 @@ import {
   faBootstrap,
   faGithub,
   faNodeJs,
-  faJava,
+  faSass,
 } from "@fortawesome/free-brands-svg-icons";
 
 import SkillsCard from "../Skills/SkillsCard";
-
 import "./skills.css";
 
 const Skills = () => {
@@ -31,7 +29,7 @@ const Skills = () => {
         <SkillsCard icon={faBootstrap} name="BOOTSTRAP" alt="bootstrap" />
         <SkillsCard icon={faGithub} name="GITHUB" alt="github" />
         <SkillsCard icon={faNodeJs} name="NODE" alt="node" />
-        <SkillsCard icon={faJava} name="JAVA" alt="java" />
+        <SkillsCard icon={faSass} name="SASS" alt="sass" />
       </Grid>
     </Grid>
   );

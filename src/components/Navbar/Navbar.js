@@ -11,7 +11,15 @@ import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 import Zoom from "@material-ui/core/Zoom";
 import { Link } from "react-scroll";
 
+import MobileNavbar from "./MobileNavbar";
+
 const useStyles = makeStyles((theme) => ({
+  mobileNavbar: {
+    display: "none",
+    [theme.breakpoints.down("1080")]: {
+      display: "block",
+    },
+  },
   root: {
     position: "fixed",
     bottom: theme.spacing(2),
@@ -28,6 +36,10 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Nunito Sans",
     fontSize: "24px",
     fontWeight: "bold",
+    // paddingLeft: "10px",
+    [theme.breakpoints.down("1117")]: {
+      fontSize: "20px",
+    },
   },
   button: {
     fontSize: "16px",
@@ -37,6 +49,9 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: "32px !important",
     paddingBottom: "16px",
     paddingTop: "16px",
+    [theme.breakpoints.down("940")]: {
+      // fontSize: "20px",
+    },
   },
 }));
 
@@ -71,63 +86,66 @@ function ScrollTop(props) {
 export default function Navbar(props) {
   const classes = useStyles();
   return (
-    <React.Fragment>
-      <CssBaseline />
-      <AppBar style={{ backgroundColor: "#f8f8f2" }}>
-        <Toolbar>
-          <Typography variant="h6" className={classes.name}>
-            David A Ghazi
-          </Typography>
-          <div className={classes.buttonContainer}>
-            <Button>
-              <Link
-                to="home-container"
-                className={classes.button}
-                spy={true}
-                smooth={true}
-              >
-                Home
-              </Link>
-            </Button>
-            <Button>
-              <Link
-                to="about-container"
-                className={classes.button}
-                spy={true}
-                smooth={true}
-              >
-                About Me
-              </Link>
-            </Button>
-            <Button>
-              <Link
-                to="projects-container"
-                className={classes.button}
-                spy={true}
-                smooth={true}
-              >
-                Projects
-              </Link>
-            </Button>
-            <Button>
-              <Link
-                to="contact-container"
-                className={classes.button}
-                spy={true}
-                smooth={true}
-              >
-                Contact
-              </Link>
-            </Button>
-          </div>
-        </Toolbar>
-      </AppBar>
-      <Toolbar id="back-to-top-anchor" />
-      <ScrollTop {...props}>
-        <Fab color="secondary" size="small" aria-label="scroll back to top">
-          <KeyboardArrowUpIcon />
-        </Fab>
-      </ScrollTop>
-    </React.Fragment>
+    <>
+      {/* <MobileNavbar className={classes.mobileNavbar} /> */}
+      <React.Fragment>
+        <CssBaseline />
+        <AppBar style={{ backgroundColor: "#f8f8f2" }}>
+          <Toolbar>
+            <Typography variant="h6" className={classes.name}>
+              David A Ghazi
+            </Typography>
+            <div className={classes.buttonContainer}>
+              <Button>
+                <Link
+                  to="home-container"
+                  className={classes.button}
+                  spy={true}
+                  smooth={true}
+                >
+                  Home
+                </Link>
+              </Button>
+              <Button>
+                <Link
+                  to="about-container"
+                  className={classes.button}
+                  spy={true}
+                  smooth={true}
+                >
+                  About Me
+                </Link>
+              </Button>
+              <Button>
+                <Link
+                  to="projects-container"
+                  className={classes.button}
+                  spy={true}
+                  smooth={true}
+                >
+                  Projects
+                </Link>
+              </Button>
+              <Button>
+                <Link
+                  to="contact-container"
+                  className={classes.button}
+                  spy={true}
+                  smooth={true}
+                >
+                  Contact
+                </Link>
+              </Button>
+            </div>
+          </Toolbar>
+        </AppBar>
+        <Toolbar id="back-to-top-anchor" />
+        <ScrollTop {...props}>
+          <Fab color="secondary" size="small" aria-label="scroll back to top">
+            <KeyboardArrowUpIcon />
+          </Fab>
+        </ScrollTop>
+      </React.Fragment>
+    </>
   );
 }

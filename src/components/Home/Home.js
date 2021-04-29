@@ -6,10 +6,10 @@ import {
   faGithubSquare,
 } from "@fortawesome/free-brands-svg-icons";
 import { faFile } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-scroll";
 
 import Picture from "../../images/ProfilePicture/profile-picture.jpeg";
 import "./home.css";
-import PDF from "../../images/resume.pdf";
 import Skills from "../Skills/Skills";
 
 const Home = () => {
@@ -21,64 +21,78 @@ const Home = () => {
             <img src={Picture} className="profile-picture" alt="profile" />
             <h1 className="name">David A Ghazi</h1>
             <div className="home-font-awesome">
-              <FontAwesomeIcon
-                icon={faLinkedinIn}
-                style={{ width: "50px", height: "50px", color: "#b9b9b9" }}
-              />
-              <FontAwesomeIcon
-                icon={faFile}
-                style={{ width: "50px", height: "50px", color: "#b9b9b9" }}
-              />
-              <FontAwesomeIcon
-                icon={faGithubSquare}
-                style={{ width: "50px", height: "50px", color: "#b9b9b9" }}
-              />
+              <a
+                href="https://www.linkedin.com/in/davidaghazi/"
+                target="_blank"
+                className="test"
+              >
+                <FontAwesomeIcon
+                  icon={faLinkedinIn}
+                  className="test"
+                  style={{
+                    width: "40px",
+                    height: "40px",
+                    color: "#b9b9b9",
+                    cursor: "pointer",
+                  }}
+                />
+              </a>
+              <a
+                href="http://www.davidghazi.com/static/media/DavidGhazi_Resume.4166f149.pdf"
+                target="_blank"
+              >
+                <FontAwesomeIcon
+                  icon={faFile}
+                  style={{
+                    width: "40px",
+                    height: "40px",
+                    color: "#b9b9b9",
+                    cursor: "pointer",
+                  }}
+                />
+              </a>
+              <a href="https://github.com/dghazi12" target="_blank">
+                <FontAwesomeIcon
+                  icon={faGithubSquare}
+                  style={{
+                    width: "40px",
+                    height: "40px",
+                    color: "#b9b9b9",
+                    cursor: "pointer",
+                  }}
+                />
+              </a>
             </div>
           </Grid>
           <Grid className="bio-container">
             <h1 className="home-header">Biography</h1>
-
-            <p className="about-text">
-              Text here where I explain where I graduated from
-            </p>
-
-            <p className="about-text">Text here where I talk about myself </p>
-
-            <p className="about-text">
-              Text here where I explain where I am working.
-            </p>
             <p className="about-text">
               Full- Stack Web Developer seeking a full or part time position! I
-              have a bachelor's in Engineering from Cape Breton University, as
-              well as a Full Stack Development certificate from the University
-              of Toronto. I am currently focusing on React based web
-              applications but welcome any challenges/opportunities that come my
-              way. I have built full stack applications using Javascript,
-              jQuery, React, MongoDB, MySQL, Express and NodeJS. I am a
-              passionate, hard working individual who is eager to learn and
-              ready to take the next step in my Dev career. If you believe I can
-              be an asset, please feel free to contact me!
+              have a Bachelor's in Engineering, as well as a certificate in Full
+              Stack Web Development from the University of Toronto. I am
+              currently focusing on React based web applications but welcome any
+              challenges/opportunities that come my way. I have built full stack
+              applications using JavaScript, jQuery, React, React Native,
+              MongoDB, MySQL, Express and NodeJS.
             </p>
-          </Grid>
-          <Grid container className="extra-content">
-            <div>
-              <h1 className="extra-header">Seeking</h1>
-              <p className="extra-subheader">Full time front- end position</p>
-              <ul className="extra-info">React</ul>
-              <ul className="extra-info">Javascript</ul>
-              <ul className="extra-info">React Native</ul>
-            </div>
-            <div>
-              <h1 className="extra-header">Education</h1>
-              <p className="extra-subheader">
-                Full Stack Web Developer (Bootcamp)
-              </p>
-              <p className="extra-info">University of Toronto</p>
-              <p className="extra-info">Cape Breton University</p>
-              <p className="extra-info">
-                Bacherlor's in Engineering Technology
-              </p>
-            </div>
+
+            <p className="about-text">
+              For the last two years, I have been interning as a front- end
+              developer for Toronto Tech Mentoring. I am mainly responsible for
+              reviewing and approving code, as well as developing responsive web
+              applications using JavaScript framework React.
+            </p>
+
+            <p className="about-text">Can I be an asset?</p>
+
+            <Link
+              to="contact-container"
+              spy={true}
+              smooth={true}
+              className="contact-button"
+            >
+              Contact Me!
+            </Link>
           </Grid>
         </Grid>
       </Grid>

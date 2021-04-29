@@ -6,7 +6,6 @@
 
 .form-container {
   display: flex;
-  /* align-items: center; */
   justify-content: center;
 }
 
@@ -18,7 +17,6 @@
   font-weight: 500;
   color: #98a6ad;
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   padding-top: 100px;
 }

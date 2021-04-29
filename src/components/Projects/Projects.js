@@ -24,11 +24,10 @@ const Projects = () => {
         <ProjectsCards
           cardImage={TorontoTech}
           alt="toronto-tech"
-          cardHeader="Toronto Tech Mentoring"
+          cardHeader="Toronto Tech"
           cardBody="Currently working with a team of developers to create a website aimed at supporting youth in the Greater Toronto Area. This website provides information for volunteers, clients and partners."
           githubLink="https://github.com/Toronto-Tech-Mentoring/TTM-Website"
           demoLink="https://torontotechmentoring.netlify.app/"
-          demo="Live Demo"
         />
 
         <ProjectsCards
@@ -38,7 +37,6 @@ const Projects = () => {
           cardBody="An alternative to Spotify, this webpage gives the user the ability to search for an artist, song or album and add them to their profile to create their own personalized playlist."
           githubLink="https://github.com/morenogomes/project_2"
           demoLink="https://stark-woodland-75959.herokuapp.com/app"
-          demo="Live Demo"
         />
 
         <ProjectsCards
@@ -49,7 +47,6 @@ const Projects = () => {
           cardBody="A simple burger builder application, this webpage allows the user to create their own personalized burger with a subtotal for their selection."
           githubLink="https://github.com/dghazi12/Build-A-Burger"
           demoLink="https://ghazi-build-a-burger.herokuapp.com/"
-          demo="Live Demo"
         />
 
         <ProjectsCards
@@ -59,7 +56,6 @@ const Projects = () => {
           cardBody="Created a quiz that will store all high- scores upon completion of the quiz. Users will be penalized 10 seconds for every wrong answer submitted, thus affecting their final score."
           githubLink="https://github.com/dghazi12/davidaghazi04.github.io"
           demoLink="https://dghazi12.github.io/davidaghazi04.github.io/"
-          demo="Live Demo"
         />
       </Grid>
 
@@ -71,7 +67,6 @@ const Projects = () => {
           cardBody="Created a simple calendar application that allows the user to input and save events for each hour of the day. Completed events are marked in green."
           githubLink="https://github.com/dghazi12/davidaghazi05.github.io"
           demoLink="https://dghazi12.github.io/davidaghazi05.github.io/"
-          demo="Live Demo"
         />
 
         <ProjectsCards
@@ -81,7 +76,6 @@ const Projects = () => {
           cardBody="Created a website that will display the current and 5- day forecast of any city searched for by the user. Used OpenWeather API to retrieve the weather data for the different cities."
           githubLink="https://github.com/dghazi12/davidaghazi06.github.io"
           demoLink="https://dghazi12.github.io/davidaghazi06.github.io/"
-          demo="Live Demo"
         />
 
         <ProjectsCards
@@ -91,7 +85,6 @@ const Projects = () => {
           cardBody="Created a burger logger with MySQL, Node, Express, Handlebars and ORM. Used Node and MySQL to query and route data in the app, and handlebars to generate the HTML."
           githubLink="https://github.com/dghazi12/davidaghazi13.github.io"
           demoLink="https://ghazi-burger-logger.herokuapp.com/"
-          demo="Live Demo"
         />
 
         <ProjectsCards
@@ -101,7 +94,6 @@ const Projects = () => {
           cardBody="This application can be used to write, save, and delete notes. Uses express backend to save and retrieve note data from a JSON file."
           githubLink="https://github.com/dghazi12/davidaghazi11.github.io"
           demoLink="https://ghazi-note-taker.herokuapp.com/"
-          demo="Live Demo"
         />
       </Grid>
 
@@ -113,7 +105,6 @@ const Projects = () => {
           cardBody="This application is a workout tracker. Created the Mongo database with a Mongoose schema and handled routes with express."
           githubLink="https://github.com/dghazi12/davidaghazi17.github.io"
           demoLink="https://ghazi-workout-tracker.herokuapp.com/"
-          demo="Live Demo"
         />
 
         <ProjectsCards
@@ -123,7 +114,6 @@ const Projects = () => {
           cardBody="This application asks a series of questions, awaiting the response from the user. Based on the response, a good README.MD file is generated for your project."
           githubLink="https://github.com/dghazi12/dghazi12-davidaghazi09.github.io"
           demoLink="https://github.com/dghazi12/dghazi12-davidaghazi09.github.io/blob/master/Images/Readme_Generator.gif"
-          demo="Demo"
         />
 
         <ProjectsCards
@@ -133,7 +123,6 @@ const Projects = () => {
           cardBody="This application consists of prompts requiring the user to input information about the team manager and team members. The application will create a nicely formatted HTML file."
           githubLink="https://github.com/dghazi12/davidaghazi10.github.io"
           demoLink="https://github.com/dghazi12/davidaghazi10.github.io/blob/master/images/EmployeeSummary.gif"
-          demo="Demo"
         />
 
         <ProjectsCards
@@ -143,7 +132,6 @@ const Projects = () => {
           cardBody="This application helps employers architect and build a solution for managing a company's employees using node, inquirer and MySQL."
           githubLink="https://github.com/dghazi12/davidaghazi12.github.io"
           demoLink="https://github.com/dghazi12/davidaghazi12.github.io/blob/master/images/EmployeeTracker.gif"
-          demo="Demo"
         />
       </Grid>
     </Grid>
