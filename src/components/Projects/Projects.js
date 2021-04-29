@@ -43,7 +43,6 @@ const Projects = () => {
           cardImage={Build}
           alt="build-burger"
           cardHeader="Build-A-Burger"
-          alt="build-burger"
           cardBody="A simple burger builder application, this webpage allows the user to create their own personalized burger with a subtotal for their selection."
           githubLink="https://github.com/dghazi12/Build-A-Burger"
           demoLink="https://ghazi-build-a-burger.herokuapp.com/"

@@ -9,6 +9,7 @@ import { faFile } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
 
 import Picture from "../../images/ProfilePicture/profile-picture.jpeg";
+import PDF from "../../components/Resume.pdf";
 import "./home.css";
 import Skills from "../Skills/Skills";
 
@@ -23,6 +24,7 @@ const Home = () => {
             <div className="home-font-awesome">
               <a
                 href="https://www.linkedin.com/in/davidaghazi/"
+                rel="noreferrer"
                 target="_blank"
                 className="test"
               >
@@ -37,10 +39,7 @@ const Home = () => {
                   }}
                 />
               </a>
-              <a
-                href="http://www.davidghazi.com/static/media/DavidGhazi_Resume.4166f149.pdf"
-                target="_blank"
-              >
+              <a href={PDF} rel="noreferrer" target="_blank">
                 <FontAwesomeIcon
                   icon={faFile}
                   style={{
@@ -51,7 +50,11 @@ const Home = () => {
                   }}
                 />
               </a>
-              <a href="https://github.com/dghazi12" target="_blank">
+              <a
+                href="https://github.com/dghazi12"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <FontAwesomeIcon
                   icon={faGithubSquare}
                   style={{

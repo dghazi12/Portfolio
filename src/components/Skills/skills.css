@@ -36,7 +36,7 @@
     line-height: 25px;
   }
   .skills-container {
-    height: 500px;
+    height: 550px;
   }
 }
 
@@ -46,6 +46,12 @@
     line-height: 14px;
   }
   .skills-container {
-    height: 450px;
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .skills-container {
+    height: 500px;
   }
 }

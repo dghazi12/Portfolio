@@ -11,7 +11,7 @@ import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 import Zoom from "@material-ui/core/Zoom";
 import { Link } from "react-scroll";
 
-import MobileNavbar from "./MobileNavbar";
+import Drawer from "./Drawer";
 
 const useStyles = makeStyles((theme) => ({
   mobileNavbar: {
@@ -29,6 +29,9 @@ const useStyles = makeStyles((theme) => ({
     position: "fixed",
     bottom: theme.spacing(2),
     right: theme.spacing(2),
+    [theme.breakpoints.down("1000")]: {
+      display: "none",
+    },
   },
   buttonContainer: {
     alignItems: "center",
@@ -40,10 +43,12 @@ const useStyles = makeStyles((theme) => ({
     color: "black",
     fontFamily: "Nunito Sans",
     fontSize: "24px",
-    fontWeight: "bold",
-    // paddingLeft: "10px",
+    fontWeight: "600",
     [theme.breakpoints.down("1117")]: {
       fontSize: "20px",
+    },
+    [theme.breakpoints.down("600")]: {
+      fontSize: "0px",
     },
   },
   button: {
@@ -95,7 +100,10 @@ export default function Navbar(props) {
       {/* <MobileNavbar className={classes.mobileNavbar} /> */}
       <React.Fragment>
         <CssBaseline />
-        <AppBar style={{ backgroundColor: "#f8f8f2", width: "100%" }}>
+        <AppBar
+          className={classes.test}
+          style={{ backgroundColor: "#f8f8f2", width: "100%" }}
+        >
           <Toolbar>
             <Typography variant="h6" className={classes.name}>
               David A Ghazi
@@ -145,6 +153,7 @@ export default function Navbar(props) {
           </Toolbar>
         </AppBar>
         <Toolbar id="back-to-top-anchor" />
+        <Drawer className={classes.drawer} />
         <ScrollTop {...props}>
           <Fab color="secondary" size="small" aria-label="scroll back to top">
             <KeyboardArrowUpIcon />
